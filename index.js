@@ -79,7 +79,7 @@ function createRock(x) {
      }
 
      else if ( top >= GAME_HEIGHT - 20 ) {
-       GAME.removeChild(rock);
+       endGame();
      }
 
 
