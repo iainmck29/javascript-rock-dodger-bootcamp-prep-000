@@ -122,13 +122,16 @@ function moveDodger(e) {
    */
 
      if (e.which === LEFT_ARROW) {
+       e.preventDefault();
        moveDodgerLeft()
        e.stopPropagation();
+
      }
 
 
 
      if (e.which === RIGHT_ARROW) {
+       e.preventDefault();
        moveDodgerRight()
        e.stopPropagation()
      }
@@ -146,7 +149,7 @@ function moveDodgerLeft() {
 
    if (left > 1) {
 
-    DODGER.style.left = `${left += 4}px`;
+    DODGER.style.left = `${left -= 4}px`;
 
    }
 
