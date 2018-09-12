@@ -116,7 +116,7 @@ function createRock(x) {
 
   // Finally, return the rock element you've created
   return rock
-}
+
 
 /**
  * End the game by clearing `gameInterval`,
